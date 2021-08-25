@@ -1,7 +1,9 @@
 import './App.css';
+import React, { useState } from "react";
+
 
 function App() {
-  const [appdraw, setAppdraw] = useState(0)
+  const [appdraw, setAppdraw] = useState(false)
   return (
     <div className="App">
       <header className="header" id="header">
@@ -43,7 +45,7 @@ function App() {
               </li>
 
             </ul>
-            <i class="uil uil-times nav_close" id='nav-close'></i>
+            {/* <i class="uil uil-times nav_close" id='nav-close'></i> */}
 
           </div>
           <div className="nav_btns">
