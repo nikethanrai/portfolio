@@ -4,11 +4,16 @@ import React, { useState } from "react";
 
 function App() {
   const [appdraw, setAppdraw] = useState(false)
+
+  const showAppDraw = () => setAppdraw(!appdraw);
+
   return (
+    
     <div className="App">
       <header className="header" id="header">
         <nav className="nav container">
           <a href="#" className="nav_logo">Rai</a>
+          
           <div className="nav_menu" id="nav-menu">
             <ul className="nav_list grid">
               <li className="nav_item">
@@ -49,7 +54,7 @@ function App() {
 
           </div>
           <div className="nav_btns">
-            <div className="nav_toggle" id="nav-toggle">
+            <div className="nav_toggle" id="nav-toggle" onClick={showAppDraw}>
             <i class="uil uil-apps"></i>
 
             </div>
