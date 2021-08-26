@@ -14,7 +14,7 @@ function App() {
         <nav className="nav container">
           <a href="#" className="nav_logo">Rai</a>
           
-          <div className="nav_menu" id="nav-menu">
+          <div className={appdraw ? "nav_menu-active": 'nav_menu'} id="nav-menu">
             <ul className="nav_list grid">
               <li className="nav_item">
                 <a href="#home" className="nav_link">
@@ -50,12 +50,12 @@ function App() {
               </li>
 
             </ul>
-            {/* <i class="uil uil-times nav_close" id='nav-close'></i> */}
+            <i class="uil uil-times nav_close" id='nav-close'  onClick={showAppDraw} ></i>
 
           </div>
           <div className="nav_btns">
-            <div className="nav_toggle" id="nav-toggle" onClick={showAppDraw}>
-            <i class="uil uil-apps"></i>
+            <div className={appdraw ?"nav_toggle-blank":'nav_toggle'} id="nav-toggle">
+            <i class="uil uil-apps"  onClick={showAppDraw}></i>
 
             </div>
           </div>
