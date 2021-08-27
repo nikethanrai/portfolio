@@ -156,8 +156,9 @@ img {
 
 .nav_logo,
 .nav_toggle {
-  color: var(--title-color);
+  color: var(--first-color-alt);
   font-weight: var(--font-medium);
+  font-size: 1.2rem;
   
 
 }
