@@ -130,7 +130,7 @@ function App() {
           <div className="about-container container grid">
             <div className="about_data">
               <p className="about_description">
-                I'm an undergraduate student at Manipal Institute of Technology, Manipal.
+                I'm an undergraduate student at<span id='manipal'><a href='https://manipal.edu/mu.html'> Manipal Institute of Technology</a></span>, Manipal.
                 I am currently pursuing a Bachelor's degree in Electrical and Electronics Engineering. (Batch of 2023)
                 <br></br>
                 <br></br>
@@ -270,6 +270,15 @@ function App() {
 
         <section className="portfolio section" id='projects'>
           <h2 className="section_title">Projects👷</h2>
+          <span className="section_subtitle">Most recent work</span>
+          <div className="portfolio_container container">
+            <div>
+              <div className="portfolio_content grid">
+                <img src='' alt='' className='portfolio_img'></img>
+
+              </div>
+            </div>
+          </div>
 
         </section>
 

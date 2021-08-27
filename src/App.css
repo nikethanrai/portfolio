@@ -176,6 +176,10 @@ img {
 .nav_toggle:hover {
   color: var(--first-color)
 }
+#manipal a{
+  text-decoration: none;
+  color: var(--first-color-alt);
+}
 
 @media screen and (max-width:767px) {
   .nav_menu {
