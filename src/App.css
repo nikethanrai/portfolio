@@ -158,6 +158,7 @@ img {
 .nav_toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  
 
 }
 
@@ -166,8 +167,9 @@ img {
 }
 
 .nav_toggle {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   cursor: pointer;
+  color: var(--first-color-alt);
 }
 
 .nav_toggle:hover {
@@ -185,6 +187,8 @@ img {
     box-shadow: 0 -1px 4px rgba(31, 31, 31, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 850ms;
+    
+    
 
 
 

@@ -268,14 +268,8 @@ function App() {
 
         </section>
 
-        <section className="project section">
-          <div className="project_bg">
-            <div className="project_container container grid">
-              <div className="project_data">
-                
-              </div>
-            </div>
-          </div>
+        <section className="portfolio section" id='projects'>
+          <h2 className="section_title">Projects👷</h2>
 
         </section>
 
