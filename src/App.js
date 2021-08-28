@@ -5,21 +5,23 @@ import React, { useState } from "react";
 
 function App() {
   const [appdraw, setAppdraw] = useState(false)
-  const [front,setFront]=useState(false)
-  const [back,setBack]=useState(false)
-  const [prog,setProg]=useState(false)
-  const [design,setDesign]=useState(false)
+  const [front, setFront] = useState(false)
+  const [back, setBack] = useState(false)
+  const [prog, setProg] = useState(false)
+  const [design, setDesign] = useState(false)
+  const [theme,setTheme]=useState(true)
 
   const showAppDraw = () => setAppdraw(!appdraw);
   const showFront = () => setFront(!front);
   const showBack = () => setBack(!back);
   const showDesign = () => setDesign(!design);
   const showProg = () => setProg(!prog);
-  
+  const showDark=()=> setTheme(!theme);
+
 
   return (
 
-    <div className="App">
+    <div className='App' data-theme={theme ? "dark" : "light"} >
       <header className="header" id="header">
         <nav className="nav container">
           <a href="#" className="nav_logo">Rai</a>
@@ -28,44 +30,48 @@ function App() {
             <ul className="nav_list grid" onClick={showAppDraw}>
               <li className="nav_item">
                 <a href="#home" className="nav_link">
-                  <i class="uil uil-estate nav_icon"></i>Home
+                  <i className="uil uil-estate nav_icon"></i>Home
                 </a>
 
 
               </li>
               <li className="nav_item">
                 <a href="#about" className="nav_link">
-                  <i class="uil uil-user nav_icon"></i>About
+                  <i className="uil uil-user nav_icon"></i>About
                 </a>
 
               </li>
               <li className="nav_item">
                 <a href="#skills" className="nav_link">
-                  <i class="uil uil-analytics nav_icon"></i>Skills
+                  <i className="uil uil-analytics nav_icon"></i>Skills
 
                 </a>
 
               </li>
               <li className="nav_item">
                 <a href="#projects" className="nav_link">
-                  <i class="uil uil-arrow nav_icon"></i>Projects
+                  <i className="uil uil-arrow nav_icon"></i>Projects
                 </a>
 
               </li>
               <li className="nav_item">
                 <a href="#contact" className="nav_link">
-                  <i class="uil uil-message nav_icon"></i>Contact Me
+                  <i className="uil uil-message nav_icon"></i>Contact Me
                 </a>
 
               </li>
 
             </ul>
-            <i class="uil uil-times nav_close" id='nav-close' onClick={showAppDraw} ></i>
+            <i className="uil uil-times nav_close" id='nav-close' onClick={showAppDraw} ></i>
 
           </div>
+          
           <div className="nav_btns">
+
+          <i className={theme ? "uil uil-sun change-theme":"uil uil-moon change-theme"} id='theme-button' onClick={showDark}></i>
+
             <div className='nav_toggle' id="nav-toggle">
-              <i class="uil uil-apps" onClick={showAppDraw}></i>
+              <i className="uil uil-apps" onClick={showAppDraw}></i>
 
             </div>
           </div>
@@ -78,12 +84,12 @@ function App() {
           <div className="home_container container grid">
             <div className="home_content grid">
               <div className="home_social">
-                <a href="https://www.linkedin.com/in/nikethan-rai-b40b641b0" className="home_social-icon"><i class="uil uil-linkedin"></i></a>
-                <a href="https://github.com/nikethanrai" className="home_social-icon"><i class="uil uil-github"></i></a>
-                <a href="https://www.instagram.com/nickrai_/" className="home_social-icon"><i class="uil uil-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nikethan-rai-b40b641b0" target='_blank' className="home_social-icon"><i className="uil uil-linkedin"></i></a>
+                <a href="https://github.com/nikethanrai" target='_blank' className="home_social-icon"><i className="uil uil-github"></i></a>
+                <a href="https://www.instagram.com/nickrai_/" target='_blank' className="home_social-icon"><i className="uil uil-instagram"></i></a>
               </div>
 
-              <div class='home_img'>
+              <div className='home_img'>
                 <svg className='home_blob' viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                   <mask id="mask0" mask-type="alpha">
                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -105,17 +111,17 @@ function App() {
                   Hi, I'm Nikethan
                 </h1>
                 <h3 className="home_subtitle">Developer and Designer</h3>
-                <p className='home_description'>A learner who runs on caffeine.Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
-                <a href="#contact" className="button button--flex">Contact Me <i class="uil uil-message nav_icon button_icon"></i>
+                <p className='home_description'>Web developer with with a niche for design. A learner who runs on caffeine.</p>
+                <a href="#contact" className="button button--flex">Contact Me <i className="uil uil-message nav_icon button_icon"></i>
                 </a>
               </div>
             </div>
 
             <div className="home_scroll">
               <a href="" className="home_scroll-button button--flex">
-                <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                <i className="uil uil-mouse-alt home_scroll-mouse"></i>
                 <span className="home_scroll-name">Scroll down</span>
-                <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                <i className="uil uil-arrow-down home_scroll-arrow"></i>
 
               </a>
             </div>
@@ -151,14 +157,14 @@ function App() {
           <span className="section_subtitle">Technical Knowledge</span>
           <div className="skills_container container grid">
             <div>
-              <div className={front ? "skills_content skills_open":'skills_close'} >
+              <div className={front ? "skills_content skills_open" : 'skills_close'} >
                 <div className="skills_header">
-                  <i class="uil uil-react skills_icon"></i>
+                  <i className="uil uil-react skills_icon"></i>
                   <div>
                     <h1 className="skills_title">Frontend developer</h1>
-                    <span class='skills_subtitle'>More info</span>
+                    <span className='skills_subtitle'>More info</span>
                   </div>
-                  <i class="uil uil-angle-down skills_arrow" onClick={showFront}></i>
+                  <i className="uil uil-angle-down skills_arrow" onClick={showFront}></i>
                 </div>
                 <div className="skills_list grid">
                   <div className="skills_data">
@@ -183,14 +189,14 @@ function App() {
 
               </div>
 
-              <div className={back ? "skills_content skills_open":'skills_close'}>
+              <div className={back ? "skills_content skills_open" : 'skills_close'}>
                 <div className="skills_header">
-                <i class="uil uil-server skills_icon"></i>
+                  <i className="uil uil-server skills_icon"></i>
                   <div>
                     <h1 className="skills_title">Backend developer</h1>
-                    <span class='skills_subtitle'>More info</span>
+                    <span className='skills_subtitle'>More info</span>
                   </div>
-                  <i class="uil uil-angle-down skills_arrow" onClick={showBack}></i>
+                  <i className="uil uil-angle-down skills_arrow" onClick={showBack}></i>
                 </div>
                 <div className="skills_list grid">
                   <div className="skills_data">
@@ -212,14 +218,14 @@ function App() {
 
               </div>
 
-              <div className={prog ? "skills_content skills_open":'skills_close'}>
+              <div className={prog ? "skills_content skills_open" : 'skills_close'}>
                 <div className="skills_header">
-                <i class="uil uil-brackets-curly skills_icon"></i>
+                  <i className="uil uil-brackets-curly skills_icon"></i>
                   <div>
                     <h1 className="skills_title">Languages</h1>
-                    <span class='skills_subtitle'>More info</span>
+                    <span className='skills_subtitle'>More info</span>
                   </div>
-                  <i class="uil uil-angle-down skills_arrow" onClick={showProg}></i>
+                  <i className="uil uil-angle-down skills_arrow" onClick={showProg}></i>
                 </div>
                 <div className="skills_list grid">
                   <div className="skills_data">
@@ -232,21 +238,21 @@ function App() {
                     <div className="skills_title">
                       <h3 className="skills_name">C++</h3>
                     </div>
-                    
+
                   </div>
 
                 </div>
 
               </div>
-              
-              <div className={design ? "skills_content skills_open":'skills_close'}>
+
+              <div className={design ? "skills_content skills_open" : 'skills_close'}>
                 <div className="skills_header">
-                <i class="uil uil-palette skills_icon"></i>
+                  <i className="uil uil-palette skills_icon"></i>
                   <div>
                     <h1 className="skills_title">Designer</h1>
-                    <span class='skills_subtitle'>More info</span>
+                    <span className='skills_subtitle'>More info</span>
                   </div>
-                  <i class="uil uil-angle-down skills_arrow" onClick={showDesign}></i>
+                  <i className="uil uil-angle-down skills_arrow" onClick={showDesign}></i>
                 </div>
                 <div className="skills_list grid">
                   <div className="skills_data">
@@ -259,7 +265,7 @@ function App() {
                     <div className="skills_title">
                       <h3 className="skills_name">Photoshop</h3>
                     </div>
-                    
+
                   </div>
 
                 </div>
@@ -276,39 +282,92 @@ function App() {
           <div className="portfolio_container container swiper mySwiper">
             <div className='swiper-wrapper'>
               <div className="portfolio_content grid swiper-slide">
-              <img src='./portfolio1.jpg' className='portfolio_image'></img>
-                <h3 className="portfolio_title">Cash Register App</h3>
+                <img src='./portfolio1.jpg' className='portfolio_image'></img>
+                <h3 className="portfolio_title">Cash Register App💸</h3>
                 <p className="portfolio_description">React app that takes in Bill amount and Cash given and shows the change to be returned in and the number of notes according to denomination.</p>
-                <a href="#" className="button button--flex button--small portfolio_button">Source Code
-                <i class="uil uil-arrow-right button_icon"></i></a>
-                
+                <a href="https://github.com/nikethanrai/cashRegister" className="button button--flex button--small portfolio_button">Source Code
+                  <i className="uil uil-arrow-right button_icon"></i></a>
+
               </div>
 
               <div className="portfolio_content grid">
                 <img src='./portfolio2.jpg' className='portfolio_image'></img>
-                <h3 className="portfolio_title">Todo App</h3>
-                <p className="portfolio_description">React app that can check, uncheck and delete tasks that can be added by input in the text box. The tasks can also be filtered according to their respective status  </p>
-                <a href="#" className="button button--flex button--small portfolio_button">Source Code
-                <i class="uil uil-arrow-right button_icon"></i></a>
-                
+                <h3 className="portfolio_title">Todo App✔️</h3>
+                <p className="portfolio_description">React app that can check, uncheck and delete tasks that can be added by input in the text box. The tasks can also be filtered according to their respective status.  </p>
+                <a href="https://github.com/nikethanrai/todoapp" className="button button--flex button--small portfolio_button">Source Code
+                  <i className="uil uil-arrow-right button_icon"></i></a>
+
               </div>
 
               <div className="portfolio_content grid">
-              <img src='./portfolio3.jpg' className='portfolio_image'></img>
-                <h3 className="portfolio_title">Banana Talk App</h3>
-                <p className="portfolio_description">React app that translates English to Minion Language</p>
-                <a href="#" className="button button--flex button--small portfolio_button">Source Code
-                <i class="uil uil-arrow-right button_icon"></i></a>
-                
+                <img src='./portfolio3.jpg' className='portfolio_image'></img>
+                <h3 className="portfolio_title">Banana Talk App🍌</h3>
+                <p className="portfolio_description">Web app that takes input in English and translates it to Minion Language aka Banana.</p>
+                <a href="https://github.com/nikethanrai/MinionTranslator" className="button button--flex button--small portfolio_button">Source Code
+                  <i className="uil uil-arrow-right button_icon"></i></a>
+
               </div>
 
-             
+
             </div>
           </div>
 
         </section>
+        <section className="contact section" id="contact">
+          <h2 className="section_title">Contact Me📧</h2>
+          <span className="section_subtitle">Get in touch</span>
+          <div className="contact_container container grid">
+            <div>
+              <div className="contact_information">
+                <i className="uil uil-envelope contact_icon"></i>
+                <div>
+                  <h3 className="contact_title ">Email</h3>
+                  <span className="contact_subtitle">nikethanrai58@gmail.com</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
 
       </main>
+      <footer className='footer'>
+        <div className="footer_bg">
+          <div className="footer_container container grid">
+            <div>
+              <h1 className="footer_title">Rai</h1>
+              <span className="footer_subtitle">Developer and Designer</span>
+
+              
+            </div>
+            <ul className="footer_links">
+              
+              <li>
+                <a href="#skills" className="footer_link">Skills</a>
+              </li>
+              <li>
+                <a href="#projects" className="footer_link">Projects</a>
+              </li>
+              <li>
+                <a href="#contact" className="footer_link">Contact Me</a>
+              </li>
+            </ul>
+            <div className="footer-socials">
+              <a href="https://www.linkedin.com/in/nikethan-rai-b40b641b0" target='_blank' className="footer_social"><i className="uil uil-linkedin"></i></a>
+              <a href="https://www.instagram.com/nickrai_/" target='_blank' className="footer_social"><i className="uil uil-twitter"></i></a>
+              <a href="https://twitter.com/nuke_Skywalker8" target='_blank' className="footer_social"><i className="uil uil-instagram"></i></a>
+            </div>
+            
+          </div>
+          <p className='footer_copy'>&#169; Rai. All rights reserved</p>
+        </div>
+
+      </footer>
 
 
 
