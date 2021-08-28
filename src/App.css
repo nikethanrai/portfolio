@@ -100,6 +100,7 @@ html {
 .App{
   background-color: var(--bg-color);
   transition: .1s;
+  user-select: none;
 }
 body {
   margin: 0 0 var(--header-height);
