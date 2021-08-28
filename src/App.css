@@ -100,7 +100,8 @@ html {
 .App{
   background-color: var(--bg-color);
   transition: .1s;
-  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; 
 }
 body {
   margin: 0 0 var(--header-height);
