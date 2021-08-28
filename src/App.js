@@ -359,8 +359,8 @@ function App() {
             </ul>
             <div className="footer-socials">
               <a href="https://www.linkedin.com/in/nikethan-rai-b40b641b0" target='_blank' className="footer_social"><i className="uil uil-linkedin"></i></a>
-              <a href="https://www.instagram.com/nickrai_/" target='_blank' className="footer_social"><i className="uil uil-twitter"></i></a>
-              <a href="https://twitter.com/nuke_Skywalker8" target='_blank' className="footer_social"><i className="uil uil-instagram"></i></a>
+              <a href="https://twitter.com/nuke_Skywalker8" target='_blank' className="footer_social"><i className="uil uil-twitter"></i></a>
+              <a href="https://www.instagram.com/nickrai_/" target='_blank' className="footer_social"><i className="uil uil-instagram"></i></a>
             </div>
             
           </div>

@@ -99,6 +99,7 @@ html {
 }
 .App{
   background-color: var(--bg-color);
+  transition: .1s;
 }
 body {
   margin: 0 0 var(--header-height);
@@ -106,6 +107,9 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: .1s;
+
+
 
 }
 
