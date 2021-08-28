@@ -363,7 +363,7 @@ img {
 
 .about {
   background-color: rgb(235, 235, 235);
-  height: 64vh;
+  height: 73vh;
 
 
 
@@ -436,4 +436,29 @@ img {
 }
 .skills_open .skills_arrow {
   transform: rotate(-180deg);
+}
+.portfolio_button{
+  width:9.9rem;
+  
+}
+.portfolio_container{
+  overflow: initial;
+}
+.portfolio_content{
+  padding: 0 1.5rem;
+}
+.portfolio_image{
+  width:265px;
+  border-radius: .5rem;
+}
+.portfolio_title{
+  font-size: var(--h3-font-size);
+  
+
+}
+.portfolio_description{
+  margin-bottom: var(--mb-0-75);
+}
+.portfolio_button:hover .button_icon{
+  transform:translateX(.5rem)
 }

@@ -54,7 +54,7 @@ function App() {
               </li>
               <li className="nav_item">
                 <a href="#contact" className="nav_link">
-                  <i class="uil uil-message nav_icon"></i>ContactMe
+                  <i class="uil uil-message nav_icon"></i>Contact Me
                 </a>
 
               </li>
@@ -123,18 +123,20 @@ function App() {
 
         </section>
         <section className="about section" id="about">
-          <h2 className="section_title"> &nbsp;&nbsp;About Me📃
+          <h2 className="section_title"> &nbsp;&nbsp;About Me🖐
 
           </h2>
           <span className="section_subtitle">My introduction</span>
           <div className="about-container container grid">
             <div className="about_data">
               <p className="about_description">
-                I'm an undergraduate student at<span id='manipal'><a href='https://manipal.edu/mu.html'> Manipal Institute of Technology</a></span>, Manipal.
-                I am currently pursuing a Bachelor's degree in Electrical and Electronics Engineering. (Batch of 2023)
+                I'm an undergraduate student at<span id='manipal'><a href='https://manipal.edu/mu.html'> Manipal Institute of Technology</a></span>, Manipal currently pursuing a Bachelor's degree in Electrical and Electronics Engineering. (Batch of 2023)
                 <br></br>
                 <br></br>
-                I make efficient and easy-to-use Web Apps. You will either find me writing code, designing apps or making a cup of coffee.☕
+                I make efficient and easy-to-use Web Apps. Most of the times you will either find me writing code, designing apps or making a cup of coffee.☕
+                <br></br>
+                <br></br>
+                Below are some topics I am interested in and have extensively worked on:
 
 
 
@@ -271,12 +273,36 @@ function App() {
         <section className="portfolio section" id='projects'>
           <h2 className="section_title">Projects👷</h2>
           <span className="section_subtitle">Most recent work</span>
-          <div className="portfolio_container container">
-            <div>
-              <div className="portfolio_content grid">
-                <img src='' alt='' className='portfolio_img'></img>
-
+          <div className="portfolio_container container swiper mySwiper">
+            <div className='swiper-wrapper'>
+              <div className="portfolio_content grid swiper-slide">
+              <img src='./portfolio1.jpg' className='portfolio_image'></img>
+                <h3 className="portfolio_title">Cash Register App</h3>
+                <p className="portfolio_description">React app that takes in Bill amount and Cash given and shows the change to be returned in and the number of notes according to denomination.</p>
+                <a href="#" className="button button--flex button--small portfolio_button">Source Code
+                <i class="uil uil-arrow-right button_icon"></i></a>
+                
               </div>
+
+              <div className="portfolio_content grid">
+                <img src='./portfolio2.jpg' className='portfolio_image'></img>
+                <h3 className="portfolio_title">Todo App</h3>
+                <p className="portfolio_description">React app that can check, uncheck and delete tasks that can be added by input in the text box. The tasks can also be filtered according to their respective status  </p>
+                <a href="#" className="button button--flex button--small portfolio_button">Source Code
+                <i class="uil uil-arrow-right button_icon"></i></a>
+                
+              </div>
+
+              <div className="portfolio_content grid">
+              <img src='./portfolio3.jpg' className='portfolio_image'></img>
+                <h3 className="portfolio_title">Banana Talk App</h3>
+                <p className="portfolio_description">React app that translates English to Minion Language</p>
+                <a href="#" className="button button--flex button--small portfolio_button">Source Code
+                <i class="uil uil-arrow-right button_icon"></i></a>
+                
+              </div>
+
+             
             </div>
           </div>
 
