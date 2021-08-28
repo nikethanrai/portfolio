@@ -111,7 +111,7 @@ function App() {
                   Hi, I'm Nikethan
                 </h1>
                 <h3 className="home_subtitle">Developer and Designer</h3>
-                <p className='home_description'>Web developer with with a niche for design. A learner who runs on caffeine.</p>
+                <p className='home_description'>Web developer with a niche for design. A learner who runs on caffeine.</p>
                 <a href="#contact" className="button button--flex">Contact Me <i className="uil uil-message nav_icon button_icon"></i>
                 </a>
               </div>
