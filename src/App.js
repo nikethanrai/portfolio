@@ -207,7 +207,7 @@ function App() {
                       <h3 className="skills_name">Express.js</h3>
                     </div>
                     <div className="skills_title">
-                      <h3 className="skills_name">Mongo</h3>
+                      <h3 className="skills_name">MongoDB</h3>
                     </div>
                     <div className="skills_title">
                       <h3 className="skills_name">REST API</h3>
