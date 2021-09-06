@@ -283,7 +283,9 @@ img {
 
   }
 
+}
 
+/* ------ */
 
 .home_container {
   gap: 1rem;
@@ -565,7 +567,7 @@ margin-right: var(--mb-1-5);
   color:#FFF
 
 }
-}
+
 @media screen and (min-width:560px) {
 .home_content{
   grid-template-columns: max-content 1fr 1fr;
