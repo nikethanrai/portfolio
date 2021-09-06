@@ -80,7 +80,7 @@ function App() {
 
       </header>
       <main className="main">
-        <section className="home selection" id='home'>
+        <section className="home section" id='home'>
           <div className="home_container container grid">
             <div className="home_content grid">
               <div className="home_social">
@@ -118,7 +118,7 @@ function App() {
             </div>
 
             <div className="home_scroll">
-              <a href="" className="home_scroll-button button--flex">
+              <a href="#about" className="home_scroll-button button--flex">
                 <i className="uil uil-mouse-alt home_scroll-mouse"></i>
                 <span className="home_scroll-name">Scroll down</span>
                 <i className="uil uil-arrow-down home_scroll-arrow"></i>
