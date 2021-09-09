@@ -689,6 +689,7 @@ margin-right: var(--mb-1-5);
 
 }
 @media screen and (min-width:1024px) {
+  
   .header,.main,.footer_container{
     padding:0
   }
@@ -702,11 +703,8 @@ margin-right: var(--mb-1-5);
     column-gap: 5rem;
   }
   .section {
-
-
-    padding-top: 15%;
-  
-  
-  
+    padding-top: 10%;
+    
   }
+  
 }
