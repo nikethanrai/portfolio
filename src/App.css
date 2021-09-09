@@ -140,15 +140,6 @@ img {
   height: auto;
 }
 
-.section {
-
-
-  padding-top: 15%;
-
-
-
-}
-
 .section_title {
   font-size: var(--h1-font-size);
 }
@@ -708,5 +699,13 @@ margin-right: var(--mb-1-5);
   }
   .portfolio_content{
     column-gap: 5rem;
+  }
+  .section {
+
+
+    padding-top: 15%;
+  
+  
+  
   }
 }
