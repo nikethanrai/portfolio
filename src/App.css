@@ -15,7 +15,7 @@
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
-  --bg-color:white;
+  --bg-color:rgb(255, 255, 255);
   --container-color: #FFF;
   --gray:rgb(235, 235, 235);
 
